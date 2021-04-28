@@ -21,6 +21,7 @@ namespace MVCCrudApi.Models.Entities
             [Display(Name ="Email")]
             [Required]
             [StringLength(50)]
+            [EmailAddress]
             public string correo;
 
         }

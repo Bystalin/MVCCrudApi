@@ -101,3 +101,4 @@ C:\Users\Byron-PC\Documents\Visual Studio 2019\APS.NET Framework\MVCCrudApi\MVCC
 C:\Users\Byron-PC\Documents\Visual Studio 2019\APS.NET Framework\MVCCrudApi\MVCCrudApi\obj\Debug\MVCCrudApi.csproj.GenerateResource.cache
 C:\Users\Byron-PC\Documents\Visual Studio 2019\APS.NET Framework\MVCCrudApi\MVCCrudApi\obj\Debug\MVCCrudApi.Migrations.Cambios.resources
 C:\Users\Byron-PC\Documents\Visual Studio 2019\APS.NET Framework\MVCCrudApi\MVCCrudApi\obj\Debug\MVCCrudApi.Migrations.CambiosTabla.resources
+C:\Users\Byron-PC\Documents\Visual Studio 2019\APS.NET Framework\MVCCrudApi\MVCCrudApi\obj\Debug\MVCCrudApi.Migrations.CambiosTabla1.resources

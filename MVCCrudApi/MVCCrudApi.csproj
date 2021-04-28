@@ -180,6 +180,10 @@
     <Compile Include="Migrations\202104282305171_CambiosTabla.Designer.cs">
       <DependentUpon>202104282305171_CambiosTabla.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104282338364_CambiosTabla1.cs" />
+    <Compile Include="Migrations\202104282338364_CambiosTabla1.Designer.cs">
+      <DependentUpon>202104282338364_CambiosTabla1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Entities\BD.cs" />
     <Compile Include="Models\Entities\people.cs" />
@@ -281,6 +285,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202104282305171_CambiosTabla.resx">
       <DependentUpon>202104282305171_CambiosTabla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104282338364_CambiosTabla1.resx">
+      <DependentUpon>202104282338364_CambiosTabla1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
