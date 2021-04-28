@@ -8,13 +8,13 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
-using MVCCrudApi.Models;
+using MVCCrudApi.Models.Entities;
 
 namespace MVCCrudApi.Controllers
 {
     public class peopleController : ApiController
     {
-        private CrudMvcApiEntities db = new CrudMvcApiEntities();
+        private BD db = new BD();
 
         // GET: api/people - regresar todos los datos de la tabla people
         public IQueryable<people> Getpeople()

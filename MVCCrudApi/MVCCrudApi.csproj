@@ -168,24 +168,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\BD.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BD.Context.tt</DependentUpon>
+    <Compile Include="Migrations\202104282259548_Inicial.cs" />
+    <Compile Include="Migrations\202104282259548_Inicial.Designer.cs">
+      <DependentUpon>202104282259548_Inicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\BD.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BD.tt</DependentUpon>
+    <Compile Include="Migrations\202104282300364_Cambios.cs" />
+    <Compile Include="Migrations\202104282300364_Cambios.Designer.cs">
+      <DependentUpon>202104282300364_Cambios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\BD.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BD.edmx</DependentUpon>
+    <Compile Include="Migrations\202104282305171_CambiosTabla.cs" />
+    <Compile Include="Migrations\202104282305171_CambiosTabla.Designer.cs">
+      <DependentUpon>202104282305171_CambiosTabla.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\people.cs">
-      <DependentUpon>BD.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Entities\BD.cs" />
+    <Compile Include="Models\Entities\people.cs" />
     <Compile Include="Models\Validations\PeopleValidate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -198,16 +195,6 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\BD.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>BD.Context.cs</LastGenOutput>
-      <DependentUpon>BD.edmx</DependentUpon>
-    </Content>
-    <Content Include="Models\BD.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BD.edmx</DependentUpon>
-      <LastGenOutput>BD.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -229,13 +216,6 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <EntityDeploy Include="Models\BD.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BD.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\BD.edmx.diagram">
-      <DependentUpon>BD.edmx</DependentUpon>
-    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -291,6 +271,17 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202104282259548_Inicial.resx">
+      <DependentUpon>202104282259548_Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104282300364_Cambios.resx">
+      <DependentUpon>202104282300364_Cambios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104282305171_CambiosTabla.resx">
+      <DependentUpon>202104282305171_CambiosTabla.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

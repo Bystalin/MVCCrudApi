@@ -4,10 +4,10 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace MVCCrudApi.Models
+namespace MVCCrudApi.Models.Entities
 {
 
-    [MetadataType(typeof(people.MetaData))]
+    [MetadataType(typeof(MetaData))]
     public partial class people
     {
         //clases selladas
@@ -15,8 +15,14 @@ namespace MVCCrudApi.Models
         {
             [Display(Name = "Nombre")] //texto q se muestra en los mensajes
             [Required]
-            [StringLength(5)]
+            [StringLength(100)]
             public string name;
+
+            [Display(Name ="Email")]
+            [Required]
+            [StringLength(50)]
+            public string correo;
+
         }
     }
 }
