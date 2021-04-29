@@ -12,44 +12,44 @@ using MVCCrudApi.Models.Entities;
 
 namespace MVCCrudApi.Controllers
 {
-    public class peopleController : ApiController
+    public class usuarioController : ApiController
     {
         private BDContext db = new BDContext();
 
-        // GET: api/people - regresar todos los datos de la tabla people
-        public IQueryable<people> Getpeople()
+        // GET: api/usuario
+        public IQueryable<usuario> Getusuario()
         {
-            return db.people;
+            return db.usuario;
         }
 
-        // GET: api/people/5
-        [ResponseType(typeof(people))]
-        public IHttpActionResult Getpeople(int id)
+        // GET: api/usuario/5
+        [ResponseType(typeof(usuario))]
+        public IHttpActionResult Getusuario(int id)
         {
-            people people = db.people.Find(id);
-            if (people == null)
+            usuario usuario = db.usuario.Find(id);
+            if (usuario == null)
             {
                 return NotFound();
             }
 
-            return Ok(people);
+            return Ok(usuario);
         }
 
-        // PUT: api/people/5
+        // PUT: api/usuario/5
         [ResponseType(typeof(void))]
-        public IHttpActionResult Putpeople(int id, people people)
+        public IHttpActionResult Putusuario(int id, usuario usuario)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != people.id)
+            if (id != usuario.id)
             {
                 return BadRequest();
             }
 
-            db.Entry(people).State = EntityState.Modified;
+            db.Entry(usuario).State = EntityState.Modified;
 
             try
             {
@@ -57,7 +57,7 @@ namespace MVCCrudApi.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!peopleExists(id))
+                if (!usuarioExists(id))
                 {
                     return NotFound();
                 }
@@ -70,35 +70,35 @@ namespace MVCCrudApi.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/people
-        [ResponseType(typeof(people))]
-        public IHttpActionResult Postpeople(people people)
+        // POST: api/usuario
+        [ResponseType(typeof(usuario))]
+        public IHttpActionResult Postusuario(usuario usuario)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            db.people.Add(people);
+            db.usuario.Add(usuario);
             db.SaveChanges();
 
-            return CreatedAtRoute("DefaultApi", new { id = people.id }, people);
+            return CreatedAtRoute("DefaultApi", new { id = usuario.id }, usuario);
         }
 
-        // DELETE: api/people/5
-        [ResponseType(typeof(people))]
-        public IHttpActionResult Deletepeople(int id)
+        // DELETE: api/usuario/5
+        [ResponseType(typeof(usuario))]
+        public IHttpActionResult Deleteusuario(int id)
         {
-            people people = db.people.Find(id);
-            if (people == null)
+            usuario usuario = db.usuario.Find(id);
+            if (usuario == null)
             {
                 return NotFound();
             }
 
-            db.people.Remove(people);
+            db.usuario.Remove(usuario);
             db.SaveChanges();
 
-            return Ok(people);
+            return Ok(usuario);
         }
 
         protected override void Dispose(bool disposing)
@@ -110,9 +110,9 @@ namespace MVCCrudApi.Controllers
             base.Dispose(disposing);
         }
 
-        private bool peopleExists(int id)
+        private bool usuarioExists(int id)
         {
-            return db.people.Count(e => e.id == id) > 0;
+            return db.usuario.Count(e => e.id == id) > 0;
         }
     }
 }

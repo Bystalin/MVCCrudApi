@@ -6,18 +6,19 @@ namespace MVCCrudApi.Models.Entities
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class people
+    [Table("usuario")]
+    public partial class usuario
     {
         public int id { get; set; }
 
-        [Required]
-        [StringLength(100)]
-        public string name { get; set; }
+        public string nombre { get; set; }
 
-        public int age { get; set; }
+        public string usuarioced { get; set; }
 
-        [Required]
-        [StringLength(50)]
+        public string password { get; set; }
+
         public string correo { get; set; }
+
+        public DateTime fechaN { get; set; }
     }
 }
