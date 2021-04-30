@@ -35,6 +35,19 @@ namespace MVCCrudApi.Controllers
             return Ok(usuario);
         }
 
+        // POST: api/usuario
+        [ResponseType(typeof(usuario))]
+        public usuario GettusuarioCed(string usuarioced)
+        {
+            usuario usuario = db.usuario.SingleOrDefault(registro=>registro.usuarioced.Equals(usuarioced));
+            if (usuario == null)
+            {
+                return null;
+            }
+
+            return usuario;
+        }
+
         // PUT: api/usuario/5
         [ResponseType(typeof(void))]
         public IHttpActionResult Putusuario(int id, usuario usuario)

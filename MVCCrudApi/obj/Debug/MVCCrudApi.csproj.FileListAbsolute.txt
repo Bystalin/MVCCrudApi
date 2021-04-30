@@ -97,3 +97,11 @@ C:\Users\Byron-PC\Documents\Visual Studio 2019\APS.NET Framework\MVCCrudApi\MVCC
 C:\Users\Byron-PC\Documents\Visual Studio 2019\APS.NET Framework\MVCCrudApi\MVCCrudApi\obj\Debug\MVCCrudApi.csproj.CopyComplete
 C:\Users\Byron-PC\Documents\Visual Studio 2019\APS.NET Framework\MVCCrudApi\MVCCrudApi\obj\Debug\MVCCrudApi.dll
 C:\Users\Byron-PC\Documents\Visual Studio 2019\APS.NET Framework\MVCCrudApi\MVCCrudApi\obj\Debug\MVCCrudApi.pdb
+C:\Users\Byron-PC\Documents\Visual Studio 2019\APS.NET Framework\MVCCrudApi\MVCCrudApi\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Byron-PC\Documents\Visual Studio 2019\APS.NET Framework\MVCCrudApi\MVCCrudApi\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Byron-PC\Documents\Visual Studio 2019\APS.NET Framework\MVCCrudApi\MVCCrudApi\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Byron-PC\Documents\Visual Studio 2019\APS.NET Framework\MVCCrudApi\MVCCrudApi\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Byron-PC\Documents\Visual Studio 2019\APS.NET Framework\MVCCrudApi\MVCCrudApi\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Byron-PC\Documents\Visual Studio 2019\APS.NET Framework\MVCCrudApi\MVCCrudApi\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Byron-PC\Documents\Visual Studio 2019\APS.NET Framework\MVCCrudApi\MVCCrudApi\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Byron-PC\Documents\Visual Studio 2019\APS.NET Framework\MVCCrudApi\MVCCrudApi\bin\System.IdentityModel.Tokens.Jwt.xml
